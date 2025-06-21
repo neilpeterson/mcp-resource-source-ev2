@@ -1,0 +1,13 @@
+{
+    "Settings": {
+        "Environment": "<environment-name-placeholder>",
+        "InternalEnvironmentName": "<environment-name-placeholder>",
+        "InternalEnvironmentNameLower": "<environment-name-placeholder>",
+        "DisplayName": "<display-name-placeholder>",
+        "TenantId": "<tenant-id-placeholder>",
+        "ServiceIdentifier": "<service-identifier-placeholder>",
+        "ServiceGroup": "<service-group-name-placeholder>",
+        "SubscriptionKey": "<subscription-key-placeholder>",
+        "resource-group-name": "<resource-group-name-placeholder>"
+    }
+}

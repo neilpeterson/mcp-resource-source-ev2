@@ -1,0 +1,36 @@
+{
+    "$schema": "https://ev2schema.azure.net/schemas/2020-04-01/RegionAgnosticServiceModel.json",
+    "contentVersion": "<build-version-placeholder>",
+    "serviceMetadata": {
+        "serviceIdentifier": "<serviceIdentifier-placeholder>",
+        "serviceGroup": "<service-group-name-placeholder>",
+        "serviceSpecificationPath": "service-definition.json",
+        "environment": "$config(Environment)",
+        "TenantId": "$config(TenantId)",
+        "displayName": "<display-name-placeholder>"
+    },
+    "serviceResourceGroupDefinitions": [
+        {
+            "name": "ddosProtection",
+            "azureResourceGroupName": "$config(resource-group-name)",
+            "subscriptionKey": "$config(SubscriptionKey)",
+            "serviceResourceDefinitions": [
+                {
+                    "name": "<arm-deployment-name-placeholder>",
+                    "composedOf": {
+                        "arm": {
+                            "templatePath": "<arm-template-path-placeholder>",
+                            "parametersPath": "<arm-parameters-path-placeholder>",
+                            "deploymentLevel": "ResourceGroup"
+                        }
+                    },
+                    "scopeTags": [
+                        {
+                            "name": "<scope-tag-name-placeholder>"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

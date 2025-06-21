@@ -1,0 +1,15 @@
+{
+    "$schema": "https://ev2schema.azure.net/schemas/2020-01-01/scopeBindings.json",
+    "contentVersion": "1.0.0.1",
+    "scopeBindings": [
+        {
+            "scopeTagName": "Agnostic-EV2",
+            "bindings": [
+                {
+                    "find": "__EV2.SCOPE_BINDING_PLACEHOLEDER__",
+                    "replaceWith": "$config(scope-binding-placeholder)"
+                }
+            ]
+        }
+    ]
+}

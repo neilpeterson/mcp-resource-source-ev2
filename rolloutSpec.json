@@ -1,0 +1,45 @@
+{
+  "$schema": "https://ev2schema.azure.net/schemas/2020-04-01/RegionAgnosticRolloutSpecification.json",
+  "contentVersion": "<build-version-placeholder>",
+  "rolloutMetadata": {
+    "serviceModelPath": "serviceModel.json",
+    "scopeBindingsPath": "scopeBindings.json",
+    "name": "Microsoft.SCE.APIGateway",
+    "buildSource": {
+      "parameters": {
+        "versionFile": "version.txt"
+      }
+    },
+    "configuration": {
+      "serviceGroupScope": {
+        "specPath": "configStore\\$serviceGroup().config.json"
+      }
+    },
+    "notification": {
+      "email": {
+        "to": "nepeters@microsoft.com"
+      }
+    }
+  },
+  "orchestratedSteps": [
+    {
+      "name": "ddos-protection",
+      "targetType": "ServiceResourceDefinition",
+      "targetName": "ddosProtection",
+      "actions": [
+        "deploy"
+      ]
+    },
+    {
+      "name": "api-gateway",
+      "targetType": "ServiceResourceDefinition",
+      "targetName": "api-gateway",
+      "actions": [
+        "deploy"
+      ],
+      "dependsOn": [
+        "ddos-protection"
+      ]
+    }
+  ]
+}

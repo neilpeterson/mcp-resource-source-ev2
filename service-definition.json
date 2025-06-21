@@ -1,0 +1,8 @@
+{
+    "providerType": "ServiceTree",
+    "identifier": "<service-identifier-placeholder>",
+    "description": "<service-description-placeholder>",
+    "policyCheckEnabled": true,
+    "contentVersion": "1.0.0.0",
+    "ownerGroupContactEmail": "<owner-group-contact-email-placeholder>"
+}
