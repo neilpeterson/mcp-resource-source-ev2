@@ -11,7 +11,7 @@
     },
     "serviceResourceGroupDefinitions": [
         {
-            "name": "ddosProtection",
+            "name": "<service-resource-group-name-placeholder>",
             "azureResourceGroupName": "$config(resource-group-name)",
             "subscriptionKey": "$config(SubscriptionKey)",
             "serviceResourceDefinitions": [
