@@ -4,7 +4,7 @@
   "rolloutMetadata": {
     "serviceModelPath": "serviceModel.json",
     "scopeBindingsPath": "scopeBindings.json",
-    "name": "Microsoft.SCE.APIGateway",
+    "name": "<rollout-name-placeholder>",
     "buildSource": {
       "parameters": {
         "versionFile": "version.txt"
@@ -17,28 +17,17 @@
     },
     "notification": {
       "email": {
-        "to": "nepeters@microsoft.com"
+        "to": "<email-placeholder>",
       }
     }
   },
   "orchestratedSteps": [
     {
-      "name": "ddos-protection",
+      "name": "<arm-deployment-step-name-placeholder>",
       "targetType": "ServiceResourceDefinition",
-      "targetName": "ddosProtection",
+      "targetName": "<service-resource-name-placeholder>",
       "actions": [
         "deploy"
-      ]
-    },
-    {
-      "name": "api-gateway",
-      "targetType": "ServiceResourceDefinition",
-      "targetName": "api-gateway",
-      "actions": [
-        "deploy"
-      ],
-      "dependsOn": [
-        "ddos-protection"
       ]
     }
   ]
