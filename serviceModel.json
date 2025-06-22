@@ -16,11 +16,12 @@
             "subscriptionKey": "$config(SubscriptionKey)",
             "serviceResourceDefinitions": [
                 {
-                    "name": "<arm-deployment-name-placeholder>",
+                    "name": "<placeholder-bicep-deployment-name>",
                     "composedOf": {
                         "arm": {
-                            "templatePath": "<arm-template-path-placeholder>",
-                            "parametersPath": "<arm-parameters-path-placeholder>",
+                            // Do not create ARM tempaltes, these will be created during ADO Pipeline execution.
+                            "templatePath": "arm-templates\\<placeholder-bicep-deployment-name>\\templates\\<placeholder-bicep-deployment-name>.json",
+                            "parametersPath": "arm-templates\\<placeholder-bicep-deployment-name>\\parameters\\<placeholder-bicep-deployment-name>.json",
                             "deploymentLevel": "ResourceGroup"
                         }
                     },
