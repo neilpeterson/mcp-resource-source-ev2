@@ -4,6 +4,7 @@
     "scopeBindings": [
         {
             "scopeTagName": "Agnostic-EV2",
+            // Createa a scope binding for each parameter in the Bicep deployments
             "bindings": [
                 {
                     "find": "__EV2.SCOPE_BINDING_PLACEHOLEDER__",
