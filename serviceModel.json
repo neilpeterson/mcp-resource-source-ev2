@@ -1,8 +1,8 @@
 {
     "$schema": "https://ev2schema.azure.net/schemas/2020-04-01/RegionAgnosticServiceModel.json",
-    "contentVersion": "<build-version-placeholder>",
+    "contentVersion": "<content-version-placeholder>",
     "serviceMetadata": {
-        "serviceIdentifier": "<serviceIdentifier-placeholder>",
+        "serviceIdentifier": "<service-name-placeholder>",
         "serviceGroup": "<service-group-name-placeholder>",
         "serviceSpecificationPath": "service-definition.json",
         "environment": "$config(Environment)",

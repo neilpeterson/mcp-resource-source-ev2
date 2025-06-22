@@ -1,10 +1,10 @@
 {
   "$schema": "https://ev2schema.azure.net/schemas/2020-04-01/RegionAgnosticRolloutSpecification.json",
-  "contentVersion": "<build-version-placeholder>",
+  "contentVersion": "<content-version-placeholder>",
   "rolloutMetadata": {
     "serviceModelPath": "serviceModel.json",
     "scopeBindingsPath": "scopeBindings.json",
-    "name": "<rollout-name-placeholder>",
+    "name": "<service-name-placeholder>",
     "buildSource": {
       "parameters": {
         "versionFile": "version.txt"
@@ -17,7 +17,7 @@
     },
     "notification": {
       "email": {
-        "to": "<email-placeholder>",
+        "to": "<service-team-email-placeholder>"
       }
     }
   },
