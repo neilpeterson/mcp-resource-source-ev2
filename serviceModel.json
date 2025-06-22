@@ -19,7 +19,7 @@
                     "name": "<placeholder-bicep-deployment-name>",
                     "composedOf": {
                         "arm": {
-                            // Do not create ARM tempaltes, these will be created during ADO Pipeline execution.
+                            // Do not create ARM tempaltes only the directories
                             "templatePath": "arm-templates\\<placeholder-bicep-deployment-name>\\templates\\<placeholder-bicep-deployment-name>.json",
                             "parametersPath": "arm-templates\\<placeholder-bicep-deployment-name>\\parameters\\<placeholder-bicep-deployment-name>.json",
                             "deploymentLevel": "ResourceGroup"
