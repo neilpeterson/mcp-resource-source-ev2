@@ -11,11 +11,13 @@
     },
     "serviceResourceGroupDefinitions": [
         {
+            // Match the name of the Bicep Deployment
             "name": "<service-resource-group-name-placeholder>",
             "azureResourceGroupName": "$config(resource-group-name)",
             "subscriptionKey": "$config(SubscriptionKey)",
             "serviceResourceDefinitions": [
                 {
+                    // Match the name of the Bicep Deployment
                     "name": "<placeholder-bicep-deployment-name>",
                     "composedOf": {
                         "arm": {
